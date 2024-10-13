@@ -45,16 +45,17 @@ body {
   font-size: 64px;
   font-weight: 700;
   line-height: 78px;
-  z-index: 2;
 }
 .top__text {
+  width: 720px;
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
   padding-bottom: 24px;
-  z-index: 2;
+  list-style-type: none;
 }
 .top__btn {
+  display: inline-block;
   border: 1px solid rgb(32, 32, 39);
   border-radius: 60px;
   background: rgb(32, 32, 39);
@@ -68,7 +69,6 @@ body {
   padding: 16px 28px;
   width: 247px;
   cursor: pointer;
-  z-index: 2;
 }
 
 .line {
@@ -84,11 +84,12 @@ body {
   letter-spacing: 0px;
 }
 .head_text {
+  width: 788px;
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 0px;
-  width: 788px;
+  list-style-type: none;
 }
 
 .about {
@@ -253,6 +254,7 @@ body {
   line-height: 32px;
 }
 .game__btn {
+  display: inline-block;
   border-radius: 60px;
   background: rgb(32, 32, 39);
   border: 1px solid rgb(32, 32, 39);
@@ -284,15 +286,15 @@ body {
   letter-spacing: 0px;
 }
 
-button, .about__game {
+.button, .about__game {
   transition: all 0.5s;
 }
 
-button:hover, .about__game:hover {
+.button:hover, .about__game:hover {
   transform: scale(1.1);
 }
 
-button:hover {
+.button:hover {
   background: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   cursor: pointer;
