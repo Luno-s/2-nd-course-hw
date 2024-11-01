@@ -1,0 +1,132 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        background: rgb(225, 255, 143);
+        background-image:url(img/bg-head-mobile-l.svg), url(img/bg-head-mobile-r.svg);
+        background-repeat: no-repeat;
+        background-position: top 64px left 37px, bottom 26px right -88px;
+        height: 649px;
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 36px;
+            padding-top: 147px;
+        }
+
+        &__title {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 49px;
+            text-align: center;
+        }
+
+        &__text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+            width: 296px;
+            padding-bottom: 0;
+        }
+
+        &__btn {
+            font-size: 16px;
+        }
+            
+    }
+
+    .head {
+        &_title {
+            font-size: 40px;
+            line-height: 49px;
+            text-align: left;
+        }
+    }
+
+    .line {
+        height: 51.34px;
+    }
+
+    .mini-game {
+        background-image: none;
+
+        &__content {
+            padding-top: 48px;
+            padding-bottom: 48px;
+        }
+
+        &__head {
+            padding-bottom: 48px;
+        }
+
+    }
+
+    .game {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, 1fr);
+        height: 567.63px;
+
+        &-box {
+            grid-template-columns: none;
+            gap: 24px;
+        }
+
+        &__info {
+            padding: 29px;
+            gap: 16px;
+        }
+
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        &__btn {
+            width: auto;
+            font-size: 16px;
+            margin-top: 16px;
+        }
+
+        &_img {
+            background-size: auto;
+            grid-row-start: 1;
+        } 
+    }
+
+    .footer {
+        &__text {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+}
+
+@media (max-width: 374px) {
+    .center {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .game {
+        &__info {
+            padding: 16px;
+        }
+
+        &__btn {
+            width: auto;
+        }
+    }
+}
