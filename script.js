@@ -1,8 +1,8 @@
 // 1 ex
-// let a = 10;
-// alert (a);
-// a = 20;
-// alert (a);
+let z = 10;
+alert (a);
+z = 20;
+alert (a);
 
 // 2 ex
 const DateFirstIPhone = 2007;
@@ -13,12 +13,12 @@ const NameCreatorJS = "Брендан Эйх";
 alert(NameCreatorJS);
 
 // 4 ex
-// let b = 10;
-// let c = 2;
-// alert (b + c);
-// alert (b - c);
-// alert (b * c);
-// alert (b / c);
+let x = 10;
+let w = 2;
+alert (x + w);
+alert (x - w);
+alert (x * w);
+alert (x / w);
 
 // 5 ex
 let result =  2 ** 5;
