@@ -1,8 +1,8 @@
 // 1 ex
 let z = 10;
-alert (a);
+alert (z);
 z = 20;
-alert (a);
+alert (z);
 
 // 2 ex
 const DateFirstIPhone = 2007;
