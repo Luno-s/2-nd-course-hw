@@ -25,7 +25,6 @@ body {
     background-image:url(img/bg-head-l.svg), url(img/bg-head-r.svg);
     background-repeat: no-repeat;
     background-position: 5% 69px, top -350px right -480px;
-    background-attachment: fixed;
     height: 710px;
     color: rgb(32, 32, 39);
     font-family: inherit;
@@ -54,7 +53,6 @@ body {
         font-weight: 400;
         line-height: 32px;
         padding-bottom: 24px;
-        list-style-type: none;
     }
 
     &__btn {
@@ -207,7 +205,7 @@ body {
     background-color: rgb(255, 255, 255);
     border-radius: 30px;
     box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
-    height: 500px;
+    min-height: 500px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     color: rgb(32, 32, 39);
@@ -341,3 +339,5 @@ body {
     cursor: pointer;
 }
 
+@import 'tablet';
+@import 'mobail';

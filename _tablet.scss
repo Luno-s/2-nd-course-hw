@@ -1,0 +1,30 @@
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 768px/2);
+        padding-right: calc(50% - 768px/2);
+    }
+
+    .top {
+        &__content {
+            width: 100%;
+        }
+    }
+
+    .about {
+        display: none;
+    }
+
+    .game {
+        &_img {
+            background-size: auto;
+        }
+    }
+
+}
+
+@media (min-width: 767px) and (max-width: 833px) {
+    .center {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
