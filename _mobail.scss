@@ -70,11 +70,12 @@
     .game {
         display: grid;
         grid-template-columns: none;
-        grid-template-rows: repeat(2, 1fr);
-        height: 567.63px;
+        grid-template-rows: none;
+        min-height: auto;
 
         &-box {
             grid-template-columns: none;
+            grid-template-rows: none;
             gap: 24px;
         }
 
@@ -102,6 +103,7 @@
         &_img {
             background-size: auto;
             grid-row-start: 1;
+            min-height: 285px;
         } 
     }
 
