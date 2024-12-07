@@ -269,10 +269,10 @@ body {
 
 .footer {
   background: rgb(189, 237, 53);
-  min-height: 150px;
+  height: 150px;
   display: flex;
   justify-content: center;
-  padding-top: 61px;
+  align-items: center;
 }
 .footer__text {
   color: rgb(0, 0, 0);
@@ -280,7 +280,6 @@ body {
   font-size: 24px;
   font-weight: 600;
   line-height: 29px;
-  letter-spacing: 0px;
 }
 
 .button, .about__game {
@@ -334,10 +333,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 36px;
+    gap: 24px;
     padding-top: 147px;
   }
   .top__title {
+    width: 262px;
     font-size: 40px;
     font-weight: 700;
     line-height: 49px;
@@ -349,9 +349,11 @@ body {
     line-height: 20px;
     text-align: center;
     width: 296px;
-    padding-bottom: 0;
+    padding-bottom: 12px;
   }
   .top__btn {
+    width: 285px;
+    height: 55px;
     font-size: 16px;
   }
   .head_title {
@@ -404,6 +406,9 @@ body {
     background-size: auto;
     grid-row-start: 1;
     min-height: 285px;
+  }
+  .footer {
+    height: 100px;
   }
   .footer__text {
     font-size: 16px;
