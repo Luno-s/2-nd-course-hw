@@ -1,6 +1,8 @@
-const numberToGuess = Math.floor(Math.random() * 100) + 1;
-
-alert("Угадайте число от 1 до 100");
+function startGame1() {
+    numberToGuess = Math.floor(Math.random() * 100) + 1;
+    alert("Угадайте число от 1 до 100");
+    guessNumber();
+}
 
 function guessNumber() {
     const userGuess = prompt("Введите ваше предположение:");
@@ -28,5 +30,3 @@ function guessNumber() {
         alert(`Поздравляю! Вы угадали число ${numberToGuess}.`);
     }
 }
-
-guessNumber();
