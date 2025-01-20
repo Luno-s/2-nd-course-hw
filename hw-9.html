@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW-9</title>
+</head>
+<body>
+    <!-- EX 1 -->
+    <h1 id="header">Это заголовок</h1>
+    <button id="buttonHide">Скрыть</button>
+
+    <!-- EX 2 -->
+    <p id="text">Это абзац текста</p>
+    <button id="buttonColor">Изменить цвет</button>
+
+    <!-- EX 3 -->
+    <button id="buttonText">Изменить текст заголовка</button>
+
+    <!-- EX 4 -->
+    <p class="description">Первый элемент описания.</p>
+    <p class="description">Второй элемент описания.</p>
+    <p class="description">Третий элемент описания.</p>
+    <button id="buttonChangeDescription">Изменить текст описания</button>
+
+    <!-- EX 5 -->
+    <button id="buttonNewText">Изменить текст на 'Новый текст'</button>
+
+    <!-- EX 6 -->
+    <button id="buttonAddElement">Добавить новый элемент</button>
+
+    <!-- EX 7 -->
+    <button id="buttonRemoveElement">Удалить элемент</button>
+
+    <script>
+        // EX 1
+        const headerEl = document.querySelector('#header');
+        const buttonHide = document.querySelector('#buttonHide');
+
+        buttonHide.addEventListener('click', () => {
+            if (headerEl.style.display === 'none') {
+                headerEl.style.display = 'block';
+            } else {
+                headerEl.style.display = 'none';
+            }
+        });
+
+        // EX 2
+        const text = document.querySelector('#text');
+        const buttonColor = document.querySelector('#buttonColor');
+
+        buttonColor.addEventListener('click', () => {
+            text.style.color = 'blue';
+        });
+
+        // EX 3
+        const buttonText = document.querySelector('#buttonText');
+
+        buttonText.addEventListener('click', () => {
+            headerEl.textContent = 'Привет, мир!';
+        });
+
+        // EX 4
+        const buttonChangeDescription = document.querySelector('#buttonChangeDescription');
+
+        buttonChangeDescription.addEventListener('click', () => {
+            const descriptions = document.querySelectorAll('.description');
+            descriptions.forEach(description => {
+                description.textContent = 'Измененный текст';
+            });
+        });
+
+        // EX 5
+        const buttonNewText = document.querySelector('#buttonNewText');
+
+        buttonNewText.addEventListener('click', () => {
+            const descriptions = document.querySelectorAll('.description');
+            descriptions.forEach(description => {
+                description.textContent = 'Новый текст';
+            });
+        });
+
+        // EX 6 
+        const buttonAddElement = document.querySelector('#buttonAddElement');
+
+        buttonAddElement.addEventListener('click', () => {
+            const newParagraph = document.createElement('p');
+            newParagraph.textContent = 'Новый абзац';
+            document.body.appendChild(newParagraph);
+        });
+
+        // EX 7
+        const buttonRemoveElement = document.querySelector('#buttonRemoveElement');
+
+        buttonRemoveElement.addEventListener('click', () => {
+            const firstDescription = document.querySelector('.description');
+            if (firstDescription) {
+                firstDescription.remove();
+            }
+        });
+    </script>
+</body>
+</html>
