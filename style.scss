@@ -97,8 +97,11 @@ body {
     }
 }
 
+.main {
+    background-color: rgb(32, 32, 39);
+}
+
 .about {
-    background: rgb(32, 32, 39);
     background-image: url(img/bg-about-l.svg), url(img/bg-about-r.svg);
     background-repeat: no-repeat;
     background-position: 25px 770px, top 100px right -110px;
@@ -179,7 +182,6 @@ body {
 }
 
 .mini-game {
-    background: rgb(32, 32, 39);
     background-image: url(img/bg-game-top.svg), url(img/bg-game-bot.svg);
     background-repeat: no-repeat;
     background-position: top 93px right 45px, bottom 45px right 52px;
