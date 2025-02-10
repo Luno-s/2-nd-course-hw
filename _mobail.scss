@@ -54,6 +54,8 @@
 
     .line {
         height: 51.34px;
+        background-size: cover;
+        animation: scroll 30s linear infinite;
     }
 
     .mini-game {
@@ -119,6 +121,11 @@
         }
     }
 
+    .button:hover {
+        transform: none;
+        background: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+    }
 }
 
 @media (max-width: 374px) {

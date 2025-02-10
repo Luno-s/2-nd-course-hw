@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -71,10 +72,21 @@ body {
 
 .line {
   background: rgb(188, 236, 48);
+  background-image: url(img/line.svg);
+  background-repeat: repeat-x;
   height: 90px;
-  z-index: 2;
+  width: 100%;
+  animation: scroll 20s linear infinite;
 }
 
+@keyframes scroll {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
 .head_title {
   font-size: 64px;
   font-weight: 700;
@@ -92,6 +104,7 @@ body {
 
 .main {
   background-color: rgb(32, 32, 39);
+  transition: background-color 0.5s;
 }
 
 .about {
@@ -306,11 +319,21 @@ body {
   .top__content {
     width: 100%;
   }
+  .line {
+    height: 70px;
+    background-size: cover;
+    animation: scroll 25s linear infinite;
+  }
   .about {
     display: none;
   }
   .game_img {
     background-size: auto;
+  }
+  .button:hover {
+    transform: none;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
   }
 }
 @media (min-width: 767px) and (max-width: 833px) {
@@ -365,6 +388,8 @@ body {
   }
   .line {
     height: 51.34px;
+    background-size: cover;
+    animation: scroll 30s linear infinite;
   }
   .mini-game {
     background-image: none;
@@ -415,6 +440,11 @@ body {
   .footer__text {
     font-size: 16px;
     line-height: 20px;
+  }
+  .button:hover {
+    transform: none;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
   }
 }
 @media (max-width: 374px) {
