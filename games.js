@@ -187,4 +187,4 @@ function startGame6() {
     const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
     mainContent.style.backgroundColor = randomColor;
 }
-colorButton.addEventListener('click', sta);
+colorButton.addEventListener('click', startGame6);
