@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -24,7 +25,7 @@ body {
   background: rgb(225, 255, 143);
   background-image: url(img/bg-head-l.svg), url(img/bg-head-r.svg);
   background-repeat: no-repeat;
-  background-position: 5% 69px, top -350px right -480px;
+  background-position: 5% 69px, top -333.46px right -488px;
   height: 710px;
   color: rgb(32, 32, 39);
   font-family: inherit;
@@ -71,10 +72,21 @@ body {
 
 .line {
   background: rgb(188, 236, 48);
+  background-image: url(img/line.svg);
+  background-repeat: repeat-x;
   height: 90px;
-  z-index: 2;
+  width: 100%;
+  animation: scroll 20s linear infinite;
 }
 
+@keyframes scroll {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
 .head_title {
   font-size: 64px;
   font-weight: 700;
@@ -90,8 +102,12 @@ body {
   list-style-type: none;
 }
 
+.main {
+  background-color: rgb(32, 32, 39);
+  transition: background-color 0.5s;
+}
+
 .about {
-  background: rgb(32, 32, 39);
   background-image: url(img/bg-about-l.svg), url(img/bg-about-r.svg);
   background-repeat: no-repeat;
   background-position: 25px 770px, top 100px right -110px;
@@ -126,7 +142,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
 }
-.about__game_column {
+.about__game-box_column {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -160,7 +176,6 @@ body {
 }
 
 .mini-game {
-  background: rgb(32, 32, 39);
   background-image: url(img/bg-game-top.svg), url(img/bg-game-bot.svg);
   background-repeat: no-repeat;
   background-position: top 93px right 45px, bottom 45px right 52px;
@@ -304,17 +319,41 @@ body {
   .top__content {
     width: 100%;
   }
+  .line {
+    height: 70px;
+    background-size: cover;
+    animation: scroll 25s linear infinite;
+  }
   .about {
     display: none;
   }
   .game_img {
-    background-size: auto;
+    background-size: 200%;
+  }
+  .button:hover {
+    transform: none;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
   }
 }
 @media (min-width: 767px) and (max-width: 833px) {
   .center {
     padding-left: 24px;
     padding-right: 24px;
+  }
+  .top {
+    background-image: url(img/bg-head-mobile-l.svg), url(img/bg-head-mobile-r.svg);
+    background-repeat: no-repeat;
+    background-position: top 64px left 37px, bottom 26px right -88px;
+  }
+  .top__content {
+    width: 100%;
+  }
+  .top__title {
+    font-size: 52px;
+  }
+  .game_img {
+    background-size: 250%;
   }
 }
 @media (max-width: 767px) {
@@ -363,6 +402,8 @@ body {
   }
   .line {
     height: 51.34px;
+    background-size: cover;
+    animation: scroll 30s linear infinite;
   }
   .mini-game {
     background-image: none;
@@ -413,6 +454,11 @@ body {
   .footer__text {
     font-size: 16px;
     line-height: 20px;
+  }
+  .button:hover {
+    transform: none;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
   }
 }
 @media (max-width: 374px) {

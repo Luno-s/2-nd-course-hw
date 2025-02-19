@@ -10,21 +10,51 @@
         }
     }
 
+    .line {
+        height: 70px;
+        background-size: cover;
+        animation: scroll 25s linear infinite;
+    }
+
     .about {
         display: none;
     }
 
     .game {
         &_img {
-            background-size: auto;
+            background-size: calc(100% * 2);
         }
     }
-
+    
+    .button:hover {
+        transform: none;
+        background: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+    }
 }
 
 @media (min-width: 767px) and (max-width: 833px) {
     .center {
         padding-left: 24px;
         padding-right: 24px;
+    }
+
+    .top {
+        background-image:url(img/bg-head-mobile-l.svg), url(img/bg-head-mobile-r.svg);
+        background-repeat: no-repeat;
+        background-position: top 64px left 37px, bottom 26px right -88px;
+        &__content {
+            width: 100%;
+        }
+
+        &__title {
+            font-size: 52px;
+        }
+    }
+
+    .game {
+        &_img {
+            background-size: calc(100% * 2.5);
+        }
     }
 }
